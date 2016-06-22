@@ -1,0 +1,33 @@
+2016-06-17 23:16:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OGGETTICELESTI" not found; SQL statement:
+SELECT * FROM OGGETTICELESTI WHERE ID_OGGETTO=? [42102-192]
+2016-06-17 23:18:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OGGETTICELESTI" not found; SQL statement:
+SELECT * FROM OGGETTICELESTI WHERE ID_OGGETTO=? [42102-192]
+2016-06-17 23:19:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OGGETTICELESTI" not found; SQL statement:
+SELECT * FROM OGGETTICELESTI WHERE ID_OGGETTO=? [42102-192]
+2016-06-17 23:19:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OGGETTICELESTI" not found; SQL statement:
+SELECT * FROM oggetticelesti WHERE ID_OGGETTO=? [42102-192]
+2016-06-17 23:20:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OGGETTICELESTI" not found; SQL statement:
+SELECT * FROM OGGETTICELESTI WHERE ID_OGGETTO=? [42102-192]
+2016-06-17 23:24:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OGGETTICELESTI" not found; SQL statement:
+SELECT * FROM OGGETTICELESTI [42102-192]
+2016-06-17 23:24:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OGGETTICELESTI" not found; SQL statement:
+SELECT * FROM OGGETTICELESTI [42102-192]
+2016-06-17 23:24:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OGGETTICELESTI" not found; SQL statement:
+SELECT * FROM OGGETTICELESTI [42102-192]
+2016-06-17 23:25:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OGGETTICELESTI" not found; SQL statement:
+SELECT * FROM OGGETTICELESTI  [42102-192]
+2016-06-17 23:30:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "OGGETTICELESTI" not found; SQL statement:
+SELECT * FROM oggetticelesti  [42102-192]
+2016-06-18 00:07:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEST" not found; SQL statement:
+Select * FROM TEST [42102-191]

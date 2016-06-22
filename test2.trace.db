@@ -1,0 +1,36 @@
+2016-06-18 00:52:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEST" not found; SQL statement:
+select * from test [42102-192]
+2016-06-18 00:53:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEST" not found; SQL statement:
+select * from test [42102-192]
+2016-06-18 00:53:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEST" not found; SQL statement:
+select * from test [42102-192]
+2016-06-18 00:54:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEST" not found; SQL statement:
+select * from test [42102-191]
+06-18 00:55:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEST" not found; SQL statement:
+select * from test [42102-187]
+06-18 00:56:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEST" not found; SQL statement:
+select * from test [42102-187]
+06-18 00:56:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEST" not found; SQL statement:
+select * from test [42102-187]
+06-18 00:58:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEST" not found; SQL statement:
+select * from test [42102-187]
+06-18 00:58:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEST" not found; SQL statement:
+select * from test [42102-187]
+06-18 01:07:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEST" not found; SQL statement:
+select * from test [42102-187]
+06-18 01:07:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEST" not found; SQL statement:
+select * from test [42102-187]
+06-18 01:08:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEST" not found; SQL statement:
+select * from test [42102-187]

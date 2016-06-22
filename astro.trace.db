@@ -1,0 +1,113 @@
+06-18 01:27:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEST" not found; SQL statement:
+Select * from test [42102-176]
+06-18 01:27:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEST" not found; SQL statement:
+Select * from test [42102-176]
+06-18 01:48:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEST" not found; SQL statement:
+Select * from TEST [42102-176]
+06-18 01:48:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEST" not found; SQL statement:
+Select * from TEST [42102-176]
+06-18 01:49:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEST" not found; SQL statement:
+Select * from TEST [42102-176]
+06-18 08:23:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE TEST (ID INTEGER PRIMARYKEY[*],NOME CHAR(60) "; expected "(, FOR, UNSIGNED, NOT, NULL, AS, DEFAULT, GENERATED, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+Create Table TEST (ID integer primarykey,nome char(60) [42001-176]
+06-18 08:24:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE TEST (ID INTEGER PRIMARYKEY[*],NOME CHAR(60)) "; expected "(, FOR, UNSIGNED, NOT, NULL, AS, DEFAULT, GENERATED, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+Create Table TEST (ID integer primarykey,nome char(60)) [42001-176]
+06-18 08:24:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-176]
+06-18 08:25:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TEST" already exists; SQL statement:
+Create Table TEST (ID integer primary key,nome char(60)) [42101-176]
+06-18 08:26:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSER[*] INTO TEST VALUES(1,? "; expected "INSERT, {"; SQL statement:
+Inser into TEST VALUES(1,? [42001-176]
+06-18 08:26:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSER[*] INTO TEST VALUES(1,?) "; expected "INSERT, {"; SQL statement:
+Inser into TEST VALUES(1,?) [42001-176]
+06-18 08:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSER[*] INTO TEST VALUES(1,?) "; expected "INSERT, {"; SQL statement:
+Inser into TEST VALUES(1,?) [42001-176]
+06-18 08:28:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSER[*] INTO TEST VALUES(1,?) "; expected "INSERT, {"; SQL statement:
+Inser into TEST VALUES(1,?) [42001-176]
+06-18 08:28:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSER[*] INTO TEST VALUES(1,'ciao') "; expected "INSERT, {"; SQL statement:
+Inser into TEST VALUES(1,'ciao') [42001-176]
+06-18 08:29:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Parameter "#1" is not set; SQL statement:
+Insert into TEST VALUES(1,?) [90012-176]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.get(DbException.java:154)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:81)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:165)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:78)
+	at org.h2.command.Command.executeUpdate(Command.java:254)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:158)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:144)
+	at Main.main(Main.java:30)
+06-18 08:29:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-176]
+06-18 08:30:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-176]
+06-18 08:30:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: No data is available [2000-176]
+06-18 08:37:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSER[*] INTO OGGETTICELESTI VALUES(1,?,?)"; expected "INSERT, {"; SQL statement:
+INSER INTO OGGETTICELESTI VALUES(1,?,?) [42001-176]
+06-18 10:15:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "TITOL" not found; SQL statement:
+INSERT INTO ARTICOLI(ID_ARTICOLO,TITOL;OGGETTO) VAUES (?,?,?) [42122-176]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.get(DbException.java:154)
+	at org.h2.table.Table.getColumn(Table.java:637)
+	at org.h2.command.Parser.parseColumn(Parser.java:849)
+	at org.h2.command.Parser.parseColumnList(Parser.java:833)
+	at org.h2.command.Parser.parseInsert(Parser.java:1033)
+	at org.h2.command.Parser.parsePrepared(Parser.java:402)
+	at org.h2.command.Parser.parse(Parser.java:306)
+	at org.h2.command.Parser.parse(Parser.java:278)
+	at org.h2.command.Parser.prepareCommand(Parser.java:243)
+	at org.h2.engine.Session.prepareLocal(Session.java:442)
+	at org.h2.engine.Session.prepareCommand(Session.java:384)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1188)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:276)
+	at Main.main(Main.java:22)
+06-18 10:15:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO ARTICOLI(ID_ARTICOLO,TITOLO,OGGETTO) VAUES[*] (?,?,?)"; expected "DIRECT, SORTED, DEFAULT, VALUES, SET, (, SELECT, FROM"; SQL statement:
+INSERT INTO ARTICOLI(ID_ARTICOLO,TITOLO,OGGETTO) VAUES (?,?,?) [42001-176]
+06-18 10:15:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+INSERT INTO ARTICOLI(ID_ARTICOLO,TITOLO,OGGETTO) VALUES (?,?,?) [90002-176]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.get(DbException.java:154)
+	at org.h2.message.DbException.get(DbException.java:143)
+	at org.h2.command.Prepared.query(Prepared.java:213)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:91)
+	at org.h2.command.Command.executeQuery(Command.java:197)
+	at org.h2.jdbc.JdbcPreparedStatement.executeQuery(JdbcPreparedStatement.java:109)
+	at Main.main(Main.java:26)
+06-18 12:27:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "PIANETA" not found; SQL statement:
+UPDATE OGGETTICELESTI SET TIPO=PIANETA WHERE ID_OGGETTO=1 [42122-176]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.get(DbException.java:154)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:148)
+	at org.h2.command.dml.Update.prepare(Update.java:189)
+	at org.h2.command.Parser.prepareCommand(Parser.java:248)
+	at org.h2.engine.Session.prepareLocal(Session.java:442)
+	at org.h2.engine.Session.prepareCommand(Session.java:384)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1188)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:276)
+	at Main.main(Main.java:28)

@@ -1,0 +1,55 @@
+
+import dao.DAO_Articolo;
+import dao.DAO_Oggetto;
+import corebusiness.oggettiCelesti.*;
+import corebusiness.Exception.*;
+
+import java.util.ArrayList;
+import dao.DBManager;
+import java.sql.*;
+import org.h2.*;
+import java.sql.DriverManager;
+
+public class Main {
+
+	public static void main(String[] args) throws ClassNotFoundException {
+		OggettoCeleste ogg=null;		
+		Connection c=DBManager.getConnection();
+		
+		ResultSet s=null;
+		
+		try{
+			//Class.forName("com.mysql.jdbc.Driver");
+			//Connection c= DriverManager.getConnection("jdbc:mysql://localhost/astro" +
+               // "user=root&password=toor");
+			/*Class.forName("org.h2.Driver");
+			Connection c= DriverManager.getConnection("jdbc:h2:./astro","sa","");*/
+			//PreparedStatement stat= c.prepareStatement("INSERt INTO OGGETTICELESTI VALUES(1,?,?)");
+			//stat.setString(1, "LUNA");
+			//stat.setString(2, "STELLA");
+			
+			
+			 //stat.executeUpdate();
+            //c.commit();
+            PreparedStatement stat= c.prepareStatement("Select * from OGGETTICELESTI");
+			s=stat.executeQuery();
+			
+			//ogg = DAO_Oggetto.readAll();
+			s.first();
+			System.out.println(s.getString(2));
+		
+			ogg= DAO_Oggetto.read(1);
+			System.out.println(ogg.getName());
+			s.close();
+			c.close();
+		}
+		catch (SQLException v)
+		{
+			System.out.print(v.getMessage());
+		}
+		catch(OggettoCelesteNotFound o){
+			o.printErrorMessage();
+		}
+	}
+
+}
