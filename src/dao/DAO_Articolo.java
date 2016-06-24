@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 
 import corebusiness.articoli.*;
@@ -105,9 +106,9 @@ public class DAO_Articolo {
 		OggettoCeleste ogg=null;
 
 		Connection c = DBManager.getConnection();
-		PreparedStatement stat = c.prepareStatement("SELECT * FROM ARTICOLI");
+		Statement stat = c.createStatement();
 		
-		ResultSet res=stat.executeQuery();
+		ResultSet res=stat.executeQuery("SELECT * FROM ARTICOLI");;
 		
 		if(res.first())
 			do{
